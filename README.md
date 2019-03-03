@@ -1,0 +1,1 @@
+This repositiory records my thoughts and solutions to the [LeetCode Questions](https://leetcode.com/problemset/all/).
