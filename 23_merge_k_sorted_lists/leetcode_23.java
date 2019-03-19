@@ -1,35 +1,38 @@
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * next; ListNode(int x) { val = x; } }
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        // store all nodes in an array list;
-        List<Integer> array = new ArrayList<>();
-        for (ListNode i : lists) {
-            while(i != null) {
-                array.add(i.val);
-                i = i.next;
-            }
+        // edge case []
+        if (lists.length == 0)
+            return null;
+        return partition(lists, 0, lists.length - 1);
+    }
+
+    public ListNode partition(ListNode[] lists, int start, int end) {
+        if (start == end)
+            return lists[start];
+
+        // start will always be less than or equal to end
+        int mid = (start + end) / 2;
+        ListNode l1 = partition(lists, start, mid);
+        ListNode l2 = partition(lists, mid + 1, end);
+        return mergeTwo(l1, l2);
+    }
+
+    public ListNode mergeTwo(ListNode l1, ListNode l2) {
+        if (l1 == null)
+            return l2;
+        if (l2 == null)
+            return l1;
+
+        if (l1.val < l2.val) {
+            l1.next = mergeTwo(l1.next, l2);
+            return l1;
+        } else {
+            l2.next = mergeTwo(l1, l2.next);
+            return l2;
         }
-        
-        // sort the array
-        Collections.sort(array);
-        
-        // create a new linked list
-        ListNode dummy = new ListNode(-1);
-        ListNode cur=dummy;
-        
-        for (int i = 0; i<array.size(); i++) {
-            cur.next = new ListNode(array.get(i));
-            cur=cur.next;
-        }
-        cur.next = null;
-        
-        return dummy.next;
     }
 }
