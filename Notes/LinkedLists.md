@@ -17,3 +17,5 @@
 7. To save memory space used by hash map(tracking relationship between node in old list and node in new list), interweave the old list and the new list so new list can mimic the action from the old list. **L138**
 8. Create a dummy head
 
+## Constrains
+- Can be traversed only in forward direction
