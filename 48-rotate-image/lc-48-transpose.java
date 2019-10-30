@@ -2,7 +2,7 @@ class Solution {
     
     public void rotate(int[][] matrix) {
         // to rotate an matrix
-        // we can first inverse the matrix
+        // we can first transpose the matrix
         // and reverse every row 
         
         /* 
