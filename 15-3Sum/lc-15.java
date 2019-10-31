@@ -4,7 +4,7 @@ class Solution {
           we can convert this problem to a two sum prblem by fixing one element
           we loop through the array, assume the selected element to be in the triplet
           check whether the assumption is true by calculating the sum of the rest elements
-          to save memory space, we can sort the in advance
+          to save memory space of a HashMap, we can sort the in advance
         */
         List<List<Integer>> results = new LinkedList<>();
         Arrays.sort(nums);
