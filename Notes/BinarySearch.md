@@ -10,29 +10,40 @@
 ### Find the index of exact number
 
 ```java
-binary search 
-
-while left <= right
-mid = floor( (l + r) /2 )
-left = mid+1
-right = mid-1
-
-while (low <= high) {
-            int mid = (low + high) / 2;
-            if (nums[mid] < target) {
-                low = mid + 1;
-            } else if (nums[mid] > target) {
-                high = mid - 1;
-            } else {
-                return mid;
-            }
-        }
+while (left <= right) {
+    int mid = left +  (right - left) / 2;
+    if (nums[mid] < target) {
+        left = mid + 1;
+    } else if (nums[mid] > target) {
+        right = mid - 1;
+    } else {
+        return mid;
+    }
+}
 return -1;
 ```
 
-
-
 ### Find the index of smallest number
+Search in [Left, right)
+```java
+// returns the index of smallest number in range [l, right)
+// such that g(m) is true. Returns right if not found
+int binarySearch(int left, int right) {
+
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (g(mid) == true) {
+            right = mid;
+        } else {
+            left = mid + 1;
+        }
+    }
+
+    return left;
+}
+```
+
+![](assets/binary-search-1.png)
 
 ## Check correctness of code
 
@@ -43,6 +54,4 @@ Here is a helpful tip to quickly prove the correctness of your binary search alg
 Use `L + (R-L) / 2` instead of  `(R+L) / 2` to avoid overflow.
 
 If you are setting mid = (left + right)/2, you have to be very careful. Unless you are using a language that does not overflow such as Python, left+right could overflow. One way to fix this is to use mid = left + (right - left)/2 instead.
-
-
 
