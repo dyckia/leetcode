@@ -1,6 +1,7 @@
 class Solution {
     /*
-        Use binary search to find peak element
+        Since any peak element in the array is ok
+        We can use binary search to find a peak element
         for each search, we make sure that the boundary element in our new search scope
         is always larger than its neighbor outside the boundary
         
