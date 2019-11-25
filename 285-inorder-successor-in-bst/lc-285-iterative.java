@@ -8,7 +8,8 @@ class Solution {
             if (cur.val > p.val) {
                 candidate = cur;
                 cur = cur.left;
-            } else if (cur.val <= p.val) {
+            } else {
+                // cur.val <= p.val
                 cur = cur.right;
             }
         }
