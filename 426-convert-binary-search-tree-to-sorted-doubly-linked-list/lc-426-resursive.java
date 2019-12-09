@@ -1,5 +1,4 @@
 /*
-// Definition for a Node.
 class Node {
     public int val;
     public Node left;
@@ -14,6 +13,7 @@ class Node {
     }
 };
 */
+
 class Solution {
     // last visited node
     Node last = null;
@@ -53,3 +53,11 @@ class Solution {
         }
     }
 }
+
+/*
+Time: O(n)
+visit each node exactly once
+
+Space: O(n)
+recursive call stack
+*/

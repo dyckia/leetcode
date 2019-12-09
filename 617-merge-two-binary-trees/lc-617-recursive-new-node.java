@@ -29,3 +29,10 @@ class Solution {
         return node;
     }
 }
+
+/*
+Time: O(m)
+m is the smaller number of nodes in the two trees
+
+Space: O(m)
+*/

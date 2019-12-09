@@ -20,3 +20,10 @@ class Solution {
         return Math.max(left, right) + 1;
     }
 }
+
+/*
+Time: O(nlogn)
+
+
+Space: O(n)
+*/
