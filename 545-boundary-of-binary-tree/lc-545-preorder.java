@@ -56,3 +56,9 @@ class Solution {
         return (cur.left == null && cur.right == null);
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/

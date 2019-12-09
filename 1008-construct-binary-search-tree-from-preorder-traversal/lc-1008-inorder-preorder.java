@@ -37,3 +37,10 @@ class Solution {
         return node;
     }
 }
+
+/*
+Time: O(nlogn)
+sort array
+
+Space: O(n)
+*/

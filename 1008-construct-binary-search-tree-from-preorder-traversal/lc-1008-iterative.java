@@ -10,7 +10,7 @@ class Solution {
             TreeNode node = new TreeNode(preorder[i]);
             TreeNode parent = stack.peek();
 
-            // stop before the first node greater than node
+            // stop before the first node greater than cur node
             while (!stack.isEmpty() && node.val > stack.peek().val) {
                 parent = stack.pop();
             }
@@ -29,3 +29,9 @@ class Solution {
         return root;
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/

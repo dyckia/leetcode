@@ -35,3 +35,9 @@ class Solution {
         return pred;
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(1)
+*/

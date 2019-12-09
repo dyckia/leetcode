@@ -23,3 +23,9 @@ class Solution {
         return true;
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/

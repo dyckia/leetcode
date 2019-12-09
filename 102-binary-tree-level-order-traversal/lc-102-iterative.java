@@ -21,3 +21,9 @@ class Solution {
         return res;
     }
 }
+
+/*
+ * Time: O(n)
+ * 
+ * Space: O(n)
+ */

@@ -32,3 +32,9 @@ class Solution {
         uStack.push(upper);
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/

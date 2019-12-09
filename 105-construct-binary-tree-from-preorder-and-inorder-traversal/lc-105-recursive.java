@@ -46,7 +46,8 @@ class Solution {
 }
 
 /*
+Time: O(n)
 
+Space: O(n)
 use HashMap to store val -> index pair in inorder
-
 */

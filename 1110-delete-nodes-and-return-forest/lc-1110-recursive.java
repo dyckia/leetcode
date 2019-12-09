@@ -29,3 +29,9 @@ class Solution {
         return toDelete ? null : node;
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/

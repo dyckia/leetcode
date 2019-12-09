@@ -28,3 +28,9 @@ class Solution {
         return node;
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/

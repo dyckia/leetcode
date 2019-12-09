@@ -29,3 +29,10 @@ class Solution {
         return flag;
     }
 }
+
+/* 
+Time: O(N)
+
+Space: O(N)
+resursive call
+*/

@@ -19,3 +19,9 @@ class Solution {
         return root;
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(1)
+*/

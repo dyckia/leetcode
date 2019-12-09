@@ -58,3 +58,9 @@ class Solution {
         return (node.left == null && node.right == null);
     }
 }
+
+/*
+Time: O(n)
+
+Space: O(n)
+*/
