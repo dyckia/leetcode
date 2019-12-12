@@ -18,7 +18,7 @@ class Solution {
                 end++;
             } else {
                 // change start point to the first char after duplicated char
-                // remove chars in the set until ther is no duplicates
+                // remove chars in the set until there is no duplicates
                 charSet.remove(s.charAt(start));
                 start++;
             }
@@ -27,3 +27,11 @@ class Solution {
         return maxL;
     }
 }
+
+/*
+Time: O(2n)
+In the worst case, each char will be visited twice, start and end
+
+Space: O(m)
+m is the charset size of the string
+*/

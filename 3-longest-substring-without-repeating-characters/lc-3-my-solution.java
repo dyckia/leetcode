@@ -36,3 +36,12 @@ class Solution {
         return;
     }
 }
+
+
+/*
+Time: O(2n)
+In the worst case, each char will be visited twice, start and end
+
+Space: O(m)
+m is the charset size of the string
+*/
