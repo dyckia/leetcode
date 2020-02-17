@@ -1,6 +1,6 @@
 class Solution {
 public:
     int countSubstrings(string s) {
-        doIT;
+        new Week;
     }
 };
