@@ -1,19 +1,26 @@
 class Solution {
     public void moveZeroes(int[] nums) {
-        // n is the number of non-zero elements
-        int n = 0;
+        // index of first zero element
+        int firstZeroInd = 0;
         
-        // scan nums, put non-zero elements in the front
-        for (int num : nums) {
-            if (num != 0) {
-                nums[n] = num;
-                n++;
+        for (int cur = 0; cur < nums.length; cur++){
+            // if cur element is non-zero, swap it with the first zero element
+            // so that everything between firstZeroInd and cur will be zero
+            if (nums[cur] != 0) {
+                int temp = nums[cur];
+                nums[cur] = nums[firstZeroInd];
+                nums[firstZeroInd] = temp;
+                firstZeroInd++;
             }
         }
-        
-        // starting from the last non-zero element, replace all elements after that with zeros
-        for (int i = n; i < nums.length; i++) {
-            nums[i] = 0;
-        }
+         
     }
 }
+
+/*
+This solution also applies to move curtain elements to the end while keeping the relative order.
+eg. move any number smaller than 5 to the end, keeping other elements in relative order.
+[1, 2, 3, 4,5,6,7,8,9,10]
+
+After using this algorithm, it goes to [5,6,7,8,9,10,1,2,3,4], which also keeps relative order of numbers.
+*/
