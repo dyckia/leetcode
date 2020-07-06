@@ -27,3 +27,9 @@ class Solution {
         return sb.length() == 0 ? "/" : sb.toString();
     }
 }
+
+/*
+Time: n
+
+Space: n
+*/
