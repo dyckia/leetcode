@@ -48,3 +48,9 @@ class Solution {
         return;
     }
 }
+
+/*
+Time: row * col
+
+Space: min(row, col) queue size
+*/

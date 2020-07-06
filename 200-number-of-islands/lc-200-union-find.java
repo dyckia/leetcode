@@ -72,3 +72,9 @@ class Solution {
         return ufSet.getCount();
     }   
 }
+
+/*
+Time: row * col
+
+Space: row * col (recursive call)
+*/
