@@ -18,3 +18,10 @@ class Solution {
         return dp[s.length()];
     }
 }
+
+/*
+Time: n^2
+for each dp[i] we need to check i times
+
+Space: n
+*/

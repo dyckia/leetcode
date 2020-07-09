@@ -24,3 +24,10 @@ class Solution {
         return false;
     }
 }
+
+/*
+Time: n^2
+for each dp[i] we need to check i times
+
+Space: n
+*/

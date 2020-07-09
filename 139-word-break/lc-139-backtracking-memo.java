@@ -11,7 +11,7 @@ class Solution {
     private boolean backtracking(String s, HashSet<String> set, int start, Boolean[] memo) {
         if (memo[start] != null) return memo[start];
         
-        // check every length of the word
+        // check every length of the string
         for (int end = start + 1; end <= s.length(); end++) {
             if (set.contains(s.substring(start, end)) && backtracking(s, set, end, memo)) {
                 memo[start] = true;
@@ -23,3 +23,10 @@ class Solution {
         return false;
     }
 }
+
+/*
+Time: n^2
+for each dp[i] we need to check i times
+
+Space: n
+*/
