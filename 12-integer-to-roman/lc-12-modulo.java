@@ -8,3 +8,9 @@ class Solution {
         return M[num / 1000] + C[(num % 1000) / 100] + X[(num % 100) / 10] + I[(num % 10) / 1];
     }
 }
+
+/*
+Time: 1
+
+Space: 1
+*/

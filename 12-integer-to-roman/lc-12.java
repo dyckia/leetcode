@@ -14,3 +14,9 @@ class Solution {
         return sb.toString();
     }
 }
+
+/*
+Time: 1
+
+Space: 1
+*/
