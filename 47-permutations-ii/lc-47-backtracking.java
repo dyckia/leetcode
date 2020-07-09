@@ -32,3 +32,9 @@ class Solution {
         return;
     }
 }
+
+/*
+Time: n!
+
+Space: n
+*/

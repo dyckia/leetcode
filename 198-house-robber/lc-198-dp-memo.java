@@ -26,3 +26,9 @@ class Solution {
         return memo[start];
     }
 }
+
+/*
+Time: n
+
+Space: n
+*/
