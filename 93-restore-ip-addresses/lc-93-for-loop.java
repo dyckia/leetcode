@@ -38,3 +38,10 @@ class Solution {
         return Integer.valueOf(seg) <= 255 ? true : false;
     }
 }
+
+/*
+Time: 990
+11×10×9=990
+
+Space: 1
+*/

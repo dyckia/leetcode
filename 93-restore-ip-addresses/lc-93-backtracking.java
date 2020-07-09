@@ -57,3 +57,10 @@ class Solution {
         return ((end - start == 1) || s.charAt(start) != '0') && (Integer.valueOf(s.substring(start, end)) <= 255);
     }
 }
+
+/*
+Time: 27
+3 * 3 * 3
+
+Space: 1
+*/
