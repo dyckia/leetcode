@@ -13,3 +13,9 @@ class Solution {
     }
     
 }
+
+/*
+Time: m + n
+
+Space: m + n
+*/
