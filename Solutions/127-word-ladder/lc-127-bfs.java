@@ -36,3 +36,13 @@ class Solution {
         return 0;
     }
 }
+
+/*
+Time: l * n
+l is the length of the word
+n is the size of wordList
+for each neighbor check, time is 26 * l
+worst case is that we need to visit all the words in the list 26 * l * n
+
+Space: n
+*/
