@@ -3,7 +3,7 @@ class Solution {
     public int lengthOfLIS(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
 
-        // dp[i] means the LIT of subarray ends at nums[i] [0, i]
+        // dp[i] means the LIS ends at nums[i]
         // dp[i] = Max(dp[j] + 1), nums[j] must be less or equal than nums[i]
         // final answer could end at any index
         memo = new int[nums.length];
@@ -16,7 +16,7 @@ class Solution {
         return res;
     }
 
-    // return the LIT of subarray from 0 to end
+    // return the LIS of subarray from 0 to end
     private int helper(int[] nums, int end) {
         if (memo[end] != 0) return memo[end];
         int max = 0;
@@ -29,3 +29,9 @@ class Solution {
         return memo[end];
     }
 }
+
+/*
+Time: n^2
+
+Space: n
+*/

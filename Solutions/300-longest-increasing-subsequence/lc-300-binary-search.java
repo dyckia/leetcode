@@ -1,8 +1,8 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        // tails store the minimum end value of LIT of given length
-        // tails[i] = k -> for any LITs in length i, the lowest end value is k
-        // max LIT length is nums.length
+        // tails store the minimum end value of LIS of given length
+        // tails[i] = k -> for any LISs in length i, the lowest end value is k
+        // max LIS length is nums.length
         int[] tails = new int[nums.length + 1];
         // actual size of the tails array
         int size = 0;
@@ -11,7 +11,7 @@ class Solution {
             int l = 1, r = size + 1;
             // tails array must be increasing
             // find the lowest index whose value is greater than n
-            // if not store n in tails[size + 1]
+            // if not found store n in tails[size + 1]
             while (l != r) {
                 int mid = (l + r) / 2;
                 if (tails[mid] >= n) {
